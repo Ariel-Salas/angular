@@ -8,14 +8,16 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 
 
 @NgModule({
-  declarations: [
+  
+  imports: [
+    CommonModule,
     HeaderUserComponent,
     MediaPlayerComponent,
-    SideBarComponent
   
+
   ],
-  imports: [
-    CommonModule
+
+  exports:[
   ]
 })
 export class SharedModule { }
