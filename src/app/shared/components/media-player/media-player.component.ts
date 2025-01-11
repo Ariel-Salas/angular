@@ -34,11 +34,12 @@ listObservers$:Array<Subscription>=[]
     }
    )
 
-   this.listObservers$=[listObservers$]
+   this.listObservers$=[observer1$]
   }
 
   //Este es el ultimo que se ejecuta antes de destruir el componente
     ngOnDestroy(): void {
+      this.listObservers$.forEach(u=> u.unsubscribe)
       console.log('💔💔🤍🤍');
       
         
