@@ -27,7 +27,10 @@ import { ImgBrokenDirective } from './directives/img-broken.directive';
     PlayListBodyComponent,
     RouterModule,
     OrderListPipe,
-    ImgBrokenDirective
+    
+    ImgBrokenDirective,
+     
+
   
 
   ],
