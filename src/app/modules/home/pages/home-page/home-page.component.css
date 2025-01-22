@@ -4,3 +4,29 @@
     background: linear-gradient(90deg, rgba(23, 23, 26, 1) 44%, rgba(24, 24, 24, 1) 100%);
     min-height: 100vh;
 }
+
+
+/* Ajustar estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .home-wrapper[_ngcontent-ng-c1708161119] {
+      margin: 0; /* Elimina el margen lateral */
+      min-height: auto; /* Ajusta la altura según sea necesario */
+      background: rgb(23, 23, 26); /* Puedes simplificar el fondo si lo prefieres */
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .section--generic__player--zone .player--list {
+      display: flex; /* Cambia de grid a flexbox */
+      flex-direction: column; /* Asegúrate de que los elementos se apilen */
+      gap: 1rem; /* Mantén un espacio entre los elementos */
+      background: red;
+    }
+  
+    .section--generic__player--zone .player--list.card-small {
+      grid-template-columns: none; /* Deshabilita las columnas */
+    }
+  }
+  

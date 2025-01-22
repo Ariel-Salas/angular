@@ -1,84 +1,200 @@
 .card-player {
     background-color: var(--color-2);
-    height: 5rem;
-    border-radius: var(--border-radius-1);
+    border-radius: var(--border-radius-2);
     display: flex;
     cursor: pointer;
     transition: all ease var(--animation-1);
     justify-content: space-between;
-}
-
-.card-player:hover {
+    flex-direction: row; /* Por defecto, diseño para modo small */
+    height: auto; /* Altura dinámica */
+    padding: 0.5rem;
+  }
+  
+  .card-player:hover {
     background-color: #4d4d4d;
-}
-
-.card-player .cover {
+  }
+  
+  .card-player .cover {
     width: 5rem;
-    height: 100%;
+    height: 5rem;
     object-fit: cover;
     border-top-left-radius: var(--border-radius-1);
     border-bottom-left-radius: var(--border-radius-1);
-}
-
-.card-player .content-player {
+  }
+  
+  .card-player .content-player {
     font-weight: 500;
     display: flex;
     align-items: center;
-    align-content: center;
-    padding: 0 0 0 .75rem;
-}
-
-.card-player .buttons-player {
+    padding: 0 0 0 0.75rem;
+    flex: 1; /* Para que el contenido ocupe espacio flexible */
+  }
+  
+  .card-player .buttons-player {
     opacity: 0;
     width: 5rem;
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
     transition: all ease var(--animation-1);
-}
-
-.card-player:hover .buttons-player {
+  }
+  
+  .card-player:hover .buttons-player {
     opacity: 1;
-}
-
-.card-player .buttons-player .play-btn {
+  }
+  
+  .card-player .buttons-player .play-btn {
     color: var(--color-4);
     border: 0;
     font-size: 1.15rem;
-    border-radius: 2rem;
+    border-radius: 50%;
     background-color: var(--color-1);
-    width: 45px;
-    height: 45px;
-}
-
-.card-player.player-big {
-    position: relative;
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Diseño del modo big */
+  .card-player.player-big {
     flex-direction: column;
-    height: 18rem;
+    height: auto;
     padding: 1rem;
-}
-
-.card-player.player-big .cover {
+    position: relative;
+  }
+  
+  .card-player.player-big .cover {
     width: 100%;
     height: 200px;
     border-radius: var(--border-radius-1);
-}
+  }
+  
 
-.card-player.player-big .content-player {
-    padding: .5rem 0;
+
+  
+  .card-player.player-big .content-player {
+    padding: 0.5rem 0;
     flex-direction: column;
-    align-self: flex-start;
     align-items: flex-start;
-}
-
-.card-player.player-big .content-player .sub-title-track {
+  }
+  
+  .card-player.player-big .content-player .sub-title-track {
     font-size: 80%;
-    opacity: .7;
+    opacity: 0.7;
+  }
+  
+  .card-player.player-big .buttons-player {
+    position: absolute;
+    right: 1rem;
+    top: calc(200px - 45px);
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 1024px) {
+    .card-player {
+      flex-direction: row; /* Cambia a diseño horizontal */
+      padding: 0.5rem;
+    }
+  
+    .card-player.player-big {
+      height: auto; /* Ajusta la altura automáticamente */
+    }
+  
+    .card-player.player-big .cover {
+      height: 180px; /* Reduce la altura de la imagen */
+    }
+  
+    .card-player.player-big .buttons-player {
+      top: calc(180px - 45px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-player {
+      flex-direction: row;
+      padding: 0.25rem;
+    }
+  
+    .card-player .cover {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    .card-player.player-big .cover {
+      height: 150px; /* Imagen más pequeña */
+    }
+  
+    .card-player.player-big .buttons-player {
+      top: calc(150px - 40px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-player {
+      flex-direction: column; /* Cambia a diseño vertical */
+      align-items: center;
+      padding: 0.5rem;
+    }
+  
+    .card-player .cover {
+      width: 100%;
+      height: 200px;
+      border-radius: var(--border-radius-1);
+      /* object-fit: contain; */
+
+    }
+  
+    .card-player .content-player {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .card-player .buttons-player {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .card-player.player-big .cover {
+      height: 120px; /* Imagen más pequeña */
+      /* object-fit: contain; */
+
+    }
+  
+    .card-player.player-big .buttons-player {
+      top: calc(120px - 35px);
+    }
+  }
+  
+
+ 
+
+@media (max-width: 768px) {
+
+  .card-player .cover {
+    /* width: 100%; */
+    height: 110px;
+    /* border-radius: var(--border-radius-1); */
+    object-fit: contain;
+  }
+
 }
 
-.card-player.player-big .buttons-player {
-    position: absolute;
-    right: 0;
-    top: 13rem
-}
+  /* Para pantallas de 768px o menores */
+  @media (max-width: 768px) {
+    .card-player.player-big .cover {
+      /* width: 100%; */
+      height: 320px; /* Ajusta la altura a 300px */
+      object-fit: contain;
+      /* border-radius: var(--border-radius-1); */
+    }
+  }
+  
+
+
+
+  @media (max-width: 768px) {
+    .card-player{
+        flex-direction: row;
+  
+  
+  
+    }
+  }

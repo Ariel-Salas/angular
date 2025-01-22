@@ -36,3 +36,56 @@ button {
 button:disabled {
     opacity: .5;
 }
+
+
+
+@media (max-width: 768px) {
+    .section--generic__player--zone .player--list {
+      display: flex; /* Cambia de grid a flexbox */
+      flex-direction: column; /* Asegúrate de que los elementos se apilen */
+      gap: 1rem; /* Mantén un espacio entre los elementos */
+    }
+  
+    .section--generic__player--zone .player--list.card-small {
+      grid-template-columns: none; /* Deshabilita las columnas */
+    }
+  }
+  
+
+
+
+/* 
+  .section--generic[_ngcontent-ng-c2633556625] {
+    background-image: linear-gradient(rgba(144, 195, 41, 0.6) 0%, #a23232 100%);
+    background-color: #5028f0;
+  }
+   */
+
+
+  .tracks-page {
+    background-image: linear-gradient(rgba(32, 36, 26, 0.5) 0%, #060505 100%);
+    background-color: #361ba4;
+  }
+  
+
+  .tracks-page {
+  background-image: linear-gradient(180deg, #2e168f 0%, #3a1fa9 0%, #02040c 20%);
+}
+
+.tracks-page {
+    /* background-image: linear-gradient(135deg, #3f1fbe 0%, #4724d3 10%, #02040c 20%, #02040c 100%); */
+}
+  
+
+
+.tracks-page {
+    /* background-image: linear-gradient(135deg, #2e168f 0%, #3a1fa9 0%, #02040c 30%); */
+  }
+  
+
+  @media (min-width: 992px) {
+    .col-lg-2 {
+      flex: 0 0 auto;
+      width: 20.66666667%;
+    }
+  }

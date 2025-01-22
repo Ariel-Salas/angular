@@ -8,6 +8,14 @@
     /* background-color: red; */
 }
 
+
+@media (max-width: 768px) {
+    .side-bar {
+        display: none;
+    }
+}
+
+
 .side-bar__list {
     list-style: none;
     padding: 0;

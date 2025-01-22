@@ -140,7 +140,7 @@ h1{
 }
 
 .media-player--wrapper .player-controls-inside .media-linetime .time-progress-live {
-    background-color: var(--color-4);
+    background-color: green;
     width: 0%;
     height: 2px;
     transition: all ease var(--animation-1);
@@ -159,3 +159,12 @@ h1{
     color: var(--color-4);
     font-size: var(--font-size-2);
 }
+
+
+
+
+
+
+
+
+

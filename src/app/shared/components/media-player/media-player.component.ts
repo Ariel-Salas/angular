@@ -13,9 +13,9 @@ import { Subscription } from 'rxjs'; //recordar. esto es de programación reacti
 })
 export class MediaPlayerComponent implements OnInit, OnDestroy {
   mockCover:TrackModel={
-    cover:'https://dojiw2m9tvv09.cloudfront.net/41657/product/X_2878515-25433947208.jpg?86&time=1732121548',
-    album:'Dark Side of the Moon',
-    name:'Sky',
+    cover:'https://www.mjvibe.com/wp-content/uploads/2016/02/cover4.png',
+    album:'Michael Jackson',
+    name:'Rock With You 🕺💃',
     url: 'https://localhost/track.mp3',
     _id: '1'
   }

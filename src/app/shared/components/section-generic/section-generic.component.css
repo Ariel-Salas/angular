@@ -17,3 +17,12 @@
 .section--generic__player--zone .player--list.card-big {
     grid-template-columns: repeat(6, minmax(100px, 1fr));
 }
+
+/* Responsivo modo canciones favoritas */
+.section--generic__player--zone .player--list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+  margin: 0;
+  padding: 0;
+}
