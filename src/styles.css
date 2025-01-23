@@ -82,10 +82,10 @@ button:disabled {
     /* background-image: linear-gradient(135deg, #2e168f 0%, #3a1fa9 0%, #02040c 30%); */
   }
   
-
+/* respondive */
   @media (min-width: 992px) {
     .col-lg-2 {
       flex: 0 0 auto;
       width: 20.66666667%;
-    }
+    } 
   }
