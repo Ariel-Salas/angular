@@ -37,7 +37,8 @@ export class TrackService {
 
 
   getAllRandom$(): Observable<any> {
-    return this.http.get(`${this.URL}/tracks`).pipe(
+    return this.http.get(`${this.URL}/tracks`)
+    .pipe(
       map(({ data }: any) => {
         return data.slice(0,8);
       }),
